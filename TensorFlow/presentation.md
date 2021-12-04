@@ -32,7 +32,7 @@ author: Arthur
 ---
 # Introduction
 ## Que'est-ce que c'est TensorFlow?
-![width:1200px](TF1.png)
+![width:1200px](images/TF1.png)
 
 ---
 # Introduction
@@ -46,7 +46,7 @@ Un réseau de neurones c’est un type de modèle, inspiré du cerveau humain, c
 
 <br>
 
-![width:600px](neural-network-1.png)
+![width:600px](images/neural-network-1.png)
 
 ---
 # Rappel: les réseaux de neurones
@@ -54,7 +54,7 @@ La façon dans laquelle ils sont imbriqués peut varier selon le problème
 
 <br>
 
-![width:600px](neural-network-2.png)
+![width:600px](images/neural-network-2.png)
 
 ---
 # TensorFlow
@@ -82,28 +82,49 @@ Utile pour faire de la recherche | Utile pour mettre un modèle en production
 ---
 # Quelques exemples
 ```py
-# Import `tensorflow` 
-import tensorflow as tf 
+import tensorflow as tf
+# Define tensor constants.
+a = tf.constant(2)
+b = tf.constant(3)
 
-# Initialize placeholders 
-x = tf.placeholder(dtype = tf.float32, shape = [None, 28, 28])
-y = tf.placeholder(dtype = tf.int32, shape = [None])
+mean = tf.reduce_mean([a, b])
 
-# Flatten the input data
-images_flat = tf.contrib.layers.flatten(x)
+# Matrix multiplications.
+matrix1 = tf.constant([[1., 2.], [3., 4.]])
+matrix2 = tf.constant([[5., 6.], [7., 8.]])
+product = tf.matmul(matrix1, matrix2)
 
-# Fully connected layer 
-logits = tf.contrib.layers.fully_connected(images_flat, 62, tf.nn.relu)
+# Création d'un array avec 10 "0" ou "1" 
+zeros = tf.zeros([10])
+ones = tf.ones([10])
 
-# Define a loss function
-loss = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(labels = y, 
-                                                                    logits = logits))
-# Define an optimizer 
-train_op = tf.train.AdamOptimizer(learning_rate=0.001).minimize(loss)
+var_zeros = tf.Variable(zeros, name='zeros')
 
-# Convert logits to label indexes
-correct_pred = tf.argmax(logits, 1)
+```
 
-# Define an accuracy metric
-accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
+---
+# Quelques exemples
+```py
+tf.nn.softmax(...)
+tf.one_hot(...)
+tf.clip_by_value(...)
+tf.math.maximum(...)
+tf.initializers.RandomNormal(...)
+tf.nn.sigmoid(...)
+
+```
+
+---
+# Quelques exemples
+```py
+def simple_neural_network(xb):
+    # linéaire (1,2 @ 2,3 = 1,3)
+    l1 = tf.matmul(xb, weights_1) + bias_1
+    
+    # non-linéaire
+    l2 = tf.math.maximum(l1, tf.Variable([0.]))
+    
+    # linéaire (1,3 @ 3,1 = 1,1)
+    l3 = tf.matmul(l2, weights_2) + bias_2
+    return l3
 ```

@@ -21,7 +21,8 @@ author: Arthur
 # Ordre du jour
 1. Introduction
 2. Keras
-3. Quelques exemples
+3. Les réseaux neuronaux
+4. Quelques exemples
 
 ---
 # Introduction
@@ -60,6 +61,52 @@ Utile pour faire de la recherche | Utile pour mettre un modèle en production
 - L'API Functional est nécessaire notamment pour
   - le partage de couches
   - inputs/outputs multiples
+
+---
+# Les réseaux neuronaux
+## Le modèle de base
+
+![width:600px](img/neural_network.jpg)
+
+---
+# Les réseaux neuronaux
+## Le réseau de neurones récurrents (RNN)
+
+![width:1000px](img/rnn_example.jpg)
+
+- Plus utilisé pour "speech recognition" et "natural language processing" (NLP)
+
+---
+# Les réseaux neuronaux
+## Le réseau de neurones convolutif (CNN)
+
+![width:1000px](img/cnn_example.jpeg)
+
+- Plus utilisé pour reconnaissance d'images 
+
+---
+# Quelques exemples
+## Les differents types de couches en Keras:
+- Input: données d'entrée
+- Dense: la couche "de base"
+- Flatten: transforme les "arrays d'arrays" en 1 array
+- Dropout: ignore un % des features d'entrée, pour éviter l'overfitting
+- Conv2D: couche de convolution
+- MaxPooling2D: 
+
+---
+# Quelques exemples
+## Une couche de convolution
+![width:200px](img/convolution_example.gif)
+- Convolution: utiliser un kernel pour extraire des features d'un image.
+- Cela nous permet d'identifier des formes plus ou moins simples (même des visages ou des objets)
+
+---
+# Quelques exemples
+## Une couche de "pooling"
+![width:400px](img/pool_example.png)
+- Pooling: aggrégation de plusieurs pixels
+- Cela rend le modèle plus robuste
 
 ---
 # Quelques exemples

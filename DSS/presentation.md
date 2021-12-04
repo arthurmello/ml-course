@@ -24,7 +24,6 @@ author: Arthur
 3. A quoi ressemble un projet sur Dataiku ?
 4. Démo
 5. Conclusion
-6. Pratique
 
 ---
 # Introduction
@@ -75,7 +74,7 @@ Les langages disponibles
 ---
 # A quoi ressemble un projet sur Dataiku ?
 
-![width:1200px](flow.png)
+![width:1200px](images/flow.png)
 
 ---
 # Démo
@@ -88,7 +87,3 @@ Aujourd’hui nous avons vu que Dataiku :
 - accepte l’utilisation de recipes visuels ainsi que du code Python, R, SQL…
 - facilite la **collaboration** au sein d’une équipe Data
 
----
-# Pratique
-- Clustering
-- 

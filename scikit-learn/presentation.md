@@ -26,7 +26,6 @@ author: Arthur
 5. Apprentissage supervisé - classification
 6. Sélection de modèles
 7. Résumé
-8. Pratique
 
 ---
 
