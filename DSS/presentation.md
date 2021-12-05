@@ -23,8 +23,8 @@ author: Arthur
 2. Introduction
 3. Dataiku : qu'est-ce que c'est ?
 4. A quoi ressemble un projet sur Dataiku ?
-5. Démo
-6. Conclusion
+5. Démos + pratique
+6. Présentation des projets
 
 ---
 # Dataiku Online
@@ -84,13 +84,16 @@ Les langages disponibles
 ![width:1200px](images/flow.png)
 
 ---
-# Démo
+# Démos + pratique
+
+1. Démo Apprentissage non-supervisé
+2. [Pratique "apprentissage non-supervisé"](https://www.kaggle.com/imakash3011/customer-personality-analysis)
+3. Démo "advanced"
+4. Pratique "advanced" (utiliser les mêmes données utilisées pour l'apprentissage non-supervisé)
+5. Démo classification
+6. [Pratique classification](https://www.kaggle.com/tejashvi14/employee-future-prediction)
+7. Démo régression
+8. [Pratique régression](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data)
 
 ---
-# Conclusion
-Aujourd’hui nous avons vu que Dataiku :
-
-- permet le **traitement** des données, leur **analyse**, la **création** et la **mise en production** de **modèles de machine learning**
-- accepte l’utilisation de recipes visuels ainsi que du code Python, R, SQL…
-- facilite la **collaboration** au sein d’une équipe Data
-
+# Présentation des projets
