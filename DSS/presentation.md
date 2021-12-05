@@ -19,11 +19,18 @@ author: Arthur
 <!-- paginate: true -->
 
 # Ordre du jour
-1. Introduction
-2. Dataiku : qu'est-ce que c'est ?
-3. A quoi ressemble un projet sur Dataiku ?
-4. Démo
-5. Conclusion
+1. Dataiku Online
+2. Introduction
+3. Dataiku : qu'est-ce que c'est ?
+4. A quoi ressemble un projet sur Dataiku ?
+5. Démo
+6. Conclusion
+
+---
+# Dataiku Online
+https://www.dataiku.com/company/academic-program/
+- A la fin de la page, cherchez "Dataiku Online" et cliquez sur "Get Started"
+- Créez un compte
 
 ---
 # Introduction
